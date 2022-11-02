@@ -6,75 +6,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>HTML Page</title>
+    <style>
+      table,
+      td,
+      th {
+        border: 1px solid black;
+        border-collapse: collapse;
+      }
+    </style>
   </head>
   <body>
-    <h1>Contact me</h1>
+    <h1>HTML Table</h1>
 
-   
-    <form action="example/com/api" method="post">
-      <div>
+    <p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae,
+      tempora?
+    </p>
+    <h2>HTML Table 1</h2>
 
-        <label for="firstName">First Name:</label>
-        <input type="text" placeholder="Enter first Name" id="firstName" />
- 
-      <div>
-        <div>
-        
-          <label for="password">Password:</label>
-          <input type="password" placeholder="Password" id="password" />
-   
-        <div>
-        <label for="lastName">Last name:</label>
-        <input type="text" placeholder="Enter last Name" id="lastName" />
-      </div>
-      <div>
-        <label for="email">Email address:</label>
-        <input type="email" placeholder="Enter email" id="email" required/>
-      </div>
-      <div>
-        <h2>What services do you need?</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>First name</th>
+          <th>Lastt name</th>
+          <th>Email address</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Precious</td>
+          <td>John</td>
+          <td>preciousjohn@yahoo.com</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="3" align="center">Table Footer</td>
+        </tr>
+      </tfoot>
+    </table>
 
-        <label for="webDesign">Web Design:</label>
-        <input type="checkbox" id="webDesign" />
+    <h2>HTML Table 2</h2>
 
-        <label for="mobileApp">Mobile App:</label>
-        <input type="checkbox" id="mobileApp" />
-
-        <label for="logoDesign">Logo Design:</label>
-        <input type="checkbox" id="logoDesign" />
-      </div>
-
-      <div>
-        <h2>Method of Payment</h2>
-        <label for="cash">Cash:</label>
-        <input type="radio" id="cash" name="payment" />
-        <label for="transfer">Transfer:</label>
-        <input type="radio" id="transfer" name="payment" />
-      </div>
-
-      <div>
-        <h2>Upload an image</h2>
-        <input type="file" accept="image/jpg" />
-      </div>
-
-      <hr />
-
-     
-
-      <p> Content</p>
-
-      <div>
-        <h2>Enter message</h2>
-        <textarea name="" id="" cols="30" rows="10"></textarea>
-      </div>
-
-      <button type="submit">Submit</button>
-    </form>
-
-    <div>
-      <h2>Connect with me</h2>
-      <a href="example.com" target="_blank">Twitter</a>
-      <a href="example.com" target="_blank">Instagram</a>
-    </div>
+    <table>
+      <tbody>
+        <tr>
+          <th>First name</th>
+          <td>Precious</td>
+        </tr>
+        <tr>
+          <th>Lastt name</th>
+          <td>John</td>
+        </tr>
+        <tr>
+          <th>Email address</th>
+          <td>preciousjohn@yahoo.com</td>
+        </tr>
+      </tbody>
+    </table>
   </body>
 </html>
