@@ -1,45 +1,31 @@
-/* Universal selector */
-
-* {
-  margin: 0;
+.grid--container {
+  display: grid;
+  grid-template-columns: 200px 200px 1fr;
+  grid-template-rows: repeat(2, 300px);
+  column-gap: 20px;
 }
 
-/* Element selector */
+.grid-one {
+  grid-column: 1 / 2;
+  grid-row: 1/3;
+  background-color: aqua;
+}
 
-form {
-  width: 600px;
+.grid-two {
   background-color: blue;
 }
 
-/* Class selector */
-
-.text {
-  color: blue;
-  font-size: 30px;
+.grid-three {
+  background-color: orange;
+}
+.grid-four {
+  background-color: red;
+}
+.grid-five {
+  background-color: yellowgreen;
 }
 
-/* ID selector */
-
-#first-paragraph {
-  color: olivedrab;
-}
-
-/* Descendant selector */
-
-.warning p {
-  color: red;
-  font-size: 25px;
-}
-
-/* Combining multiple selectors */
-
-h1,
-h2 {
-  color: green;
-}
-
-/* Atribute selector */
-
-input[type="text"] {
-  padding: 10px 8px;
+.grid-six {
+  color: #fff;
+  background-color: black;
 }
